@@ -7,3 +7,5 @@ test_script:
 - ps: Write-Host "Checking appveyor_build_folder"
 - ps: $expected_build_folder = "C:\my-projects\dir with spaces\for test project"
 - ps: 'if($env:appveyor_build_folder -ne $expected_build_folder) { throw "appveyor_build_folder: $env:appveyor_build_folder, expected: $expected_build_folder"; }'
+
+build: off
